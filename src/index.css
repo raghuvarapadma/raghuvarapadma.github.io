@@ -1,5 +1,5 @@
 /* feel free to go on google fonts and change this to another font! */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 /* == UI COMPONENTS == */
 /* buttons */
@@ -14,7 +14,7 @@ button,
   text-decoration: none;
   font-size: 1rem;
   /* if you change the font, don't forget to change it here too! */
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding: .6rem 1.2rem;
   vertical-align: middle;
   text-align: center;
@@ -47,7 +47,7 @@ button:hover {
 
 html {
   box-sizing: border-box;
-  font-family: "Space Mono", monospace;
+  font-family: "Oswald", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.4;
@@ -56,6 +56,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 18px;
+  background-color: rgb(255, 255, 255);
 }
 
 div {
@@ -80,7 +81,7 @@ a {
 }
 
 a:hover {
-  background-color: #beebaa44;
+  background-color: #c42a3244;
 }
 
 /* paragraph */
@@ -89,8 +90,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #0a5822;
-  margin-top: 2rem;
+  color: #2a4ba5;
   line-height: 1.2;
 }
 
@@ -100,7 +100,10 @@ h1 {
 }
 
 h4 {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+  margin-bottom:1px
 }
 
 /**/
@@ -148,5 +151,64 @@ h4 {
   margin-top: 2rem;
   padding: 0.5rem 1rem;
   text-align: center;
-  background-color: #5a7913;
+  background-color: #132e79;
+}
+
+.column {
+  float: left;
+  width: 60%;
+}
+
+.column2 {
+  float: left;
+  width:40%;
+}
+
+.column3 {
+  float: left;
+  width: 33%;
+  padding:5px;
+}
+
+.columnhalf1 {
+  float: right;
+  width:50%;
+}
+.columnhalf2 {
+  float: left;
+  width:50%;
+}
+
+/* Clear floats after the columns */
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  flex:auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-center {
+  content: "";
+  display: flex;
+  clear: both;
+  flex:auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  display:block;
+  margin:auto;
+  width:504px;
+  height: 378px;
+
+}
+
+.photomini {
+  display:block;
+  margin:3px;
+  width:50px;
+  height: 50px;
 }
